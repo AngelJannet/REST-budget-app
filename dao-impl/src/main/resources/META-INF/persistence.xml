@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <persistence-unit name="persistenceUnitName">
+        <description>Hibernate EntityManager Demo</description>
+        <class>com.sandbox.entity.Wallet</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-52-18-116-67.eu-west-1.compute.amazonaws.com:5432/dc7id3bp738ibi"/>
+            <property name="javax.persistence.jdbc.user" value="blodgavttvtvof"/>
+            <property name="javax.persistence.jdbc.password" value="0f12b38f4351ca0c4e8e30be880901f50d01d34398255ea928000beead537c6c"/>
+        </properties>
+    </persistence-unit>
+</persistence>
